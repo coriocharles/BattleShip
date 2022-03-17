@@ -1,4 +1,3 @@
-
 #playerboard {
     display: grid;
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px;
@@ -9,6 +8,7 @@
     justify-content: right;
     float: center;
 }
+
 #compboard {
     display: grid;
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px;
@@ -19,16 +19,18 @@
     justify-content: left;
     float: center;
 }
+
 .reset {
     margin: 10px;
 }
+
 .tile {
 background: rgb(59,236,119);
 background: radial-gradient(circle, rgb(225, 240, 230) 12%, rgb(14, 154, 197) 58%);
 border: 1px solid rgb(69, 182, 219);
 font-size: small;
- 
 }
+
 .ctile {
 background: rgb(59,236,119);
 background: radial-gradient(circle, rgb(225, 240, 230) 12%, rgb(14, 154, 197) 58%);
@@ -42,15 +44,13 @@ font-size: small;
     padding-top: 10px;
     text-align: center;
     margin: 0 auto;
-   
-    
 }
-
 
 #hit {
 background: rgb(237,159,5);
 background: radial-gradient(circle, rgba(237,159,5,1) 12%, rgba(232,16,16,1) 75%);
 }
+
 #miss {
 background: rgb(13,206,223);
 background: linear-gradient(90deg, rgba(13,206,223,1) 0%, rgba(11,182,220,1) 19%, rgba(8,130,230,1) 38%, rgba(7,104,235,1) 66%, rgba(1,0,255,1) 100%);
@@ -101,9 +101,11 @@ body {
 h3 {
     font-size: smaller;
 }
+
 h2 {
     font-size: smaller;
 }
+
 span {
     color: rgb(52, 255, 52)
 }
@@ -129,9 +131,11 @@ h1 {
 .trymove {
     background-color: rgb(204, 12, 12);
 }
+
 .scoreboardcss {
     text-align: center;
 }
+
 button {
     background-color: rgb(204, 12, 12);
     width: 100px;
@@ -140,7 +144,6 @@ button {
 
 .innertext {
     text-align: center;
-
 }
 
 input {
@@ -150,12 +153,14 @@ input {
 #input {
     width: 110px
 }
+
 form {
     text-align: center;
     justify-content: center;
     padding-top: 40px;
     color: navy
 }
+
 .wins {
     padding-top: 100px;
     color: navy;
@@ -166,10 +171,6 @@ form {
     font-weight: bolder;
     font-size: larger;
 }
-
-
-
-
 
 @media screen and (max-width: 1300px) {
   #playerboard, #compboard, .playerboats, .computerboats {
