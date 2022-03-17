@@ -29,14 +29,10 @@ const cstatusAC = document.querySelector(".statuscAC")
 //Variables
 let pwins = 0
 let cwins = 0
- 
-
 let subPlaced = false
 let scoutPlaced = false
 let ACPlaced = false
 let BSPlaced = false
-
-
 
 //creating 2d array & related variables
 let pboard = []
@@ -143,9 +139,6 @@ trymove.addEventListener("click", event => {
     attack(textInput)
     document.querySelector('#input').value = ""
     gameOver()
-
-    //test1
-    
     if (!gameOver()) {
         if (currentTarget == ""){
             setTimeout(computerAttack, 1000)
@@ -177,28 +170,24 @@ function attack(text) {
                 if (cSBlife == 0) {
                     alert("You sunk the enemy Scout Boat!")
                 }
-                
             }
             if (computerTiles[i].classList.contains("cSub")) {
                 cSublife -= 1
                 if (cSublife == 0) {
                     alert("You sunk the enemy Sub!")
-                }
-                
+                } 
             }
             if (computerTiles[i].classList.contains("cBS")) {
                 cBSlife -= 1
                 if (cBSlife == 0) {
                     alert("You sunk the enemy Battleship!")
                 }
-                
             }
             if (computerTiles[i].classList.contains("cAC")) {
                 cAClife -= 1
                 if (cAClife == 0) {
                     alert("You sunk the enemy Aircraft Carrier!")
                 }
-                
             }
         } else if (computerTiles[i].innerText == text && computerTiles[i].id == "") {
             computerTiles[i].setAttribute("id", "miss")
@@ -231,6 +220,7 @@ function gameOver() {
         alert("Computer WINS!")
         cwins += 0.5
         return true
+        
     }
     if (cSBlife == 0 && cSublife == 0 && cBSlife == 0 && cAClife == 0) {
         alert("Player Wins!")
