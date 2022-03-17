@@ -6,12 +6,10 @@ Battleship is a turn-based strategy game which consists of two teams placing pie
 
 --------------
 
-
 #### Screenshot:
 ![Main Playing Screen](screenshot.png)
 
 --------------
-
 
 ## Code Styles
 - HTML
@@ -21,4 +19,4 @@ Battleship is a turn-based strategy game which consists of two teams placing pie
 --------------
 
 ## Playing the Game
-To begin, click the "START NEW GAME" button.  You will then be prompted to place your ships, which you can handle on the left side of the page.  Place all 4 ships on valid locations on your board, either vertically or horizontally.  Once your ships are placed, the computer will do the same.  You are now ready to take your first shot at the enemy.  Take turns making strategic artilley strikes until one player's ships are all destroyed, repeat the process.
+To begin, click the "START NEW GAME" button.  You will then be prompted to place your ships, which you can handle on the left side of the page.  Place all 4 ships on valid locations on your board, either vertically or horizontally.  Once your ships are placed, the computer place theirs.  You are now ready to take your first shot at the enemy.  Take turns making strategic artilley strikes until one player's ships are all destroyed, repeat the process.
