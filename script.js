@@ -131,7 +131,6 @@ cboard.push(carray5)
 cboard.push(carray6)
 cboard.push(carray7)
 cboard.push(carray8)
-console.log(cboard)
 
 //Event listener for attack (includes computer attack)
 trymove.addEventListener("click", event => {
@@ -157,9 +156,6 @@ trymove.addEventListener("click", event => {
     }} else {
         alert("Please enter a valid move!")
     }
-    console.log(currentTarget)
-    console.log(targetrow)
-    console.log(targetcolumn)
 }
 })
 
@@ -178,7 +174,6 @@ function attack(text) {
             computerTiles[i].setAttribute("id", "hit")
             if (computerTiles[i].classList.contains("cSB")) {
                 cSBlife -=1
-                console.log(cSBlife)
                 if (cSBlife == 0) {
                     alert("You sunk the enemy Scout Boat!")
                 }
@@ -186,7 +181,6 @@ function attack(text) {
             }
             if (computerTiles[i].classList.contains("cSub")) {
                 cSublife -= 1
-                console.log(cSublife)
                 if (cSublife == 0) {
                     alert("You sunk the enemy Sub!")
                 }
@@ -194,7 +188,6 @@ function attack(text) {
             }
             if (computerTiles[i].classList.contains("cBS")) {
                 cBSlife -= 1
-                console.log(cBSlife)
                 if (cBSlife == 0) {
                     alert("You sunk the enemy Battleship!")
                 }
@@ -202,7 +195,6 @@ function attack(text) {
             }
             if (computerTiles[i].classList.contains("cAC")) {
                 cAClife -= 1
-                console.log(cAClife)
                 if (cAClife == 0) {
                     alert("You sunk the enemy Aircraft Carrier!")
                 }
@@ -248,38 +240,6 @@ function gameOver() {
 }
 
 //Computer attack if no target is currently selected
-// function computerAttack(){
-//     let successfulAttack = false
-//     while (successfulAttack == false) {
-//     compattempt = Math.floor(Math.random() * 64)
-//     for (let i = 0; i < computerTiles.length; i++) {
-//         if (playerTiles[i].innerText == String(compattempt) && playerTiles[i].id == "playership") {
-//             playerTiles[i].setAttribute("id", "hit")
-//             if (playerTiles[i].classList.contains("pSB")) {
-//                 pSBlife -= 1
-//                 successfulAttack = true
-//                 currentTarget = "pSB"
-//             }
-//             if (playerTiles[i].classList.contains("pSub")) {
-//                 pSublife -= 1
-//                 successfulAttack = true
-//                 currentTarget = "pSub"
-//             }
-//             if (playerTiles[i].classList.contains("pBS")) {
-//                 pBSlife -= 1
-//                 successfulAttack = true
-//                 currentTarget = "pBS"
-//             }
-//             if (playerTiles[i].classList.contains("pAC")) {
-//                 pAClife -= 1
-//                 successfulAttack = true
-//                 currentTarget = "pAC"
-//             }
-//         }  else if (playerTiles[i].innerText == String(compattempt) && playerTiles[i].id == "") {
-//             playerTiles[i].setAttribute("id", "miss")
-//             successfulAttack = true
-//         }
-// }}}
 function computerAttack() {
     let successfulAttack = false
     while (successfulAttack == false) {
@@ -323,7 +283,6 @@ function computerAttack() {
         }
     }
 }
-console.log("working")
 }
 
 // computer attack AI when it has a target
@@ -333,7 +292,6 @@ function computerAttackTarget() {
     try {
     while (successfulAttack == false) {
         direction = Math.floor(Math.random() * 5)
-        console.log(`the direction is ${direction}`)
         if (currentTarget == "pAC") {
             compattempt = Math.floor(Math.random() * 6)
             if (direction == 1) {
@@ -595,8 +553,6 @@ function computerAttackTarget() {
                     }
                 }
             }
-
-
         }
 }
 } catch(err) {
@@ -604,9 +560,6 @@ function computerAttackTarget() {
     computerAttackTarget()
 }
 }
-
-
-
 
 //Starting new game
 function resetGame() {
@@ -666,10 +619,8 @@ function resetGame() {
     setComputerBS()}
     while (cACset == false) {
     setComputerAC()}
-
     alert("Pick Your Ships!")
 }
-
 
 //Player Boat placement 
 let pSBlife = 2
@@ -677,14 +628,12 @@ let pSublife = 3
 let pBSlife = 4
 let pAClife = 5
 
-
 //SUBMARINE PLACEMENT
 subPlayerH.addEventListener("click", event => {
     event.preventDefault()
     let textInput = document.querySelector('#inputSub').value;
     placeSubHorizontal(textInput)
     document.querySelector('#inputSub').value = ""
-
 })
 function placeSubHorizontal(num) {
 if (subPlaced == false){
@@ -817,7 +766,6 @@ BSPlayerH.addEventListener("click", event => {
     let textInput = document.querySelector('#inputBS').value;
     placeBSHorizontal(textInput)
     document.querySelector('#inputBS').value = ""
-
 })
 function placeBSHorizontal(num) {
     if (BSPlaced == false) {
@@ -894,7 +842,6 @@ ACPlayerH.addEventListener("click", event => {
     let textInput = document.querySelector('#inputAC').value;
     placeACHorizontal(textInput)
     document.querySelector('#inputAC').value = ""
-
 })
 function placeACHorizontal(num) {
     if (ACPlaced == false) {
@@ -968,7 +915,6 @@ function placeACVertical(num) {
         alert("you can't place it there.")
     }
 }
-
 
 //computer ship placement
 let cSBset = false
