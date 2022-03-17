@@ -1,4 +1,4 @@
-## Battleship
+# Battleship
 
 **Live Link:** [play here](https://coriocharles.github.io/BattleShip-Test/)
 ## Objective
@@ -7,7 +7,7 @@ Battleship is a turn-based strategy game which consists of two teams placing pie
 --------------
 
 
-##### screenshots;
+#### Screenshot:
 ![Main Playing Screen](screenshot.png)
 
 --------------
