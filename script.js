@@ -237,12 +237,12 @@ function attack(text) {
 function gameOver() {
     if (pSBlife <= 0 && pSublife <= 0 && pBSlife <= 0 && pAClife <= 0) {
         alert("Computer WINS!")
-        cwins += 1
+        cwins += 0.5
         return true
     }
     if (cSBlife == 0 && cSublife == 0 && cBSlife == 0 && cAClife == 0) {
         alert("Player Wins!")
-        pwins += 1
+        pwins += 0.5
         return true
     }
 }
