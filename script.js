@@ -622,9 +622,7 @@ subPlayerH.addEventListener("click", event => {
     let textInput = document.querySelector('#inputSub').value;
     placeSubHorizontal(textInput)
     document.querySelector('#inputSub').value = ""
-    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
-        alert("You are ready to start shooting!")
-    }
+  
 })
 function placeSubHorizontal(num) {
 if (subPlaced == false){
@@ -640,6 +638,9 @@ for (let i = 0; i < pboard.length; i++) {
             pboard[row][column + 1].classList.add("class", "pSub")
             pboard[row][column + 2].classList.add("class", "pSub")
             subPlaced = true
+            if (subPlaced == true && scoutPlaced == true && ACPlaced == true && BSPlaced == true) {
+                alert("You are ready to start shooting!")
+            }
         } 
     }
 }} else if (subPlaced == true) {
@@ -653,9 +654,6 @@ subPlayerV.addEventListener("click", event => {
     let textInput = document.querySelector('#inputSub').value;
     placeSubVertical(textInput)
     document.querySelector('#inputSub').value = ""
-    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
-        alert("You are ready to start shooting!")
-    }
 })
 function placeSubVertical(num) {
 if (subPlaced == false) {
@@ -671,6 +669,9 @@ if (subPlaced == false) {
                 pboard[row + 1][column].classList.add("class", "pSub")
                 pboard[row + 2][column].classList.add("class", "pSub")
                 subPlaced = true
+                if (subPlaced == true && scoutPlaced == true && ACPlaced == true && BSPlaced == true) {
+                    alert("You are ready to start shooting!")
+                }
             }
             } 
             catch(err) {
@@ -690,10 +691,6 @@ scoutPlayerH.addEventListener("click", event => {
     let textInput = document.querySelector('#inputSB').value;
     placeSBHorizontal(textInput)
     document.querySelector('#inputSB').value = ""
-    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
-        alert("You are ready to start shooting!")
-    }
-
 })
 function placeSBHorizontal(num) {
     if (scoutPlaced == false) {
@@ -708,6 +705,9 @@ function placeSBHorizontal(num) {
                     pboard[row][column].classList.add("class", "pSB")
                     pboard[row][column + 1].classList.add("class", "pSB")
                     scoutPlaced = true
+                    if (subPlaced == true && scoutPlaced == true && ACPlaced == true && BSPlaced == true) {
+                        alert("You are ready to start shooting!")
+                    }
                 }
             } 
             catch(err) {
@@ -728,9 +728,7 @@ scoutPlayerV.addEventListener("click", event => {
     let textInput = document.querySelector('#inputSB').value;
     placeSBVertical(textInput)
     document.querySelector('#inputSB').value = ""
-    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
-        alert("You are ready to start shooting!")
-    }
+   
 })
 function placeSBVertical(num) {
     if (scoutPlaced == false) {
@@ -745,6 +743,9 @@ function placeSBVertical(num) {
                         pboard[row][column].classList.add("class", "pSB")
                         pboard[row + 1][column].classList.add("class", "pSB")
                         scoutPlaced = true
+                        if (subPlaced == true && scoutPlaced == true && ACPlaced == true && BSPlaced == true) {
+                            alert("You are ready to start shooting!")
+                        }
                     }
                 }
                 catch (err) {
@@ -765,9 +766,7 @@ BSPlayerH.addEventListener("click", event => {
     let textInput = document.querySelector('#inputBS').value;
     placeBSHorizontal(textInput)
     document.querySelector('#inputBS').value = ""
-    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
-        alert("You are ready to start shooting!")
-    }
+  
 })
 function placeBSHorizontal(num) {
     if (BSPlaced == false) {
@@ -786,6 +785,9 @@ function placeBSHorizontal(num) {
                         pboard[row][column + 2].classList.add("class", "pBS")
                         pboard[row][column + 3].classList.add("class", "pBS")
                         BSPlaced = true
+                        if (subPlaced == true && scoutPlaced == true && ACPlaced == true && BSPlaced == true) {
+                            alert("You are ready to start shooting!")
+                        }
                     }
                 }
                 catch (err) {
@@ -806,9 +808,6 @@ BSPlayerV.addEventListener("click", event => {
     let textInput = document.querySelector('#inputBS').value;
     placeBSVertical(textInput)
     document.querySelector('#inputBS').value = ""
-    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
-        alert("You are ready to start shooting!")
-    }
 })
 function placeBSVertical(num) {
     if (BSPlaced == false) {
@@ -827,6 +826,9 @@ function placeBSVertical(num) {
                         pboard[row + 2][column].classList.add("class", "pBS")
                         pboard[row + 3][column].classList.add("class", "pBS")
                         BSPlaced = true
+                        if (subPlaced == true && scoutPlaced == true && ACPlaced == true && BSPlaced == true) {
+                            alert("You are ready to start shooting!")
+                        }
                     }
                 }
                 catch (err) {
@@ -847,9 +849,7 @@ ACPlayerH.addEventListener("click", event => {
     let textInput = document.querySelector('#inputAC').value;
     placeACHorizontal(textInput)
     document.querySelector('#inputAC').value = ""
-    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
-        alert("You are ready to start shooting!")
-    }
+    
 })
 function placeACHorizontal(num) {
     if (ACPlaced == false) {
@@ -870,6 +870,9 @@ function placeACHorizontal(num) {
                         pboard[row][column + 3].classList.add("class", "pAC")
                         pboard[row][column + 4].classList.add("class", "pAC")
                         ACPlaced = true
+                        if (subPlaced == true && scoutPlaced == true && ACPlaced == true && BSPlaced == true) {
+                            alert("You are ready to start shooting!")
+                        }
                     }
                 }
                 catch (err) {
@@ -890,9 +893,7 @@ ACPlayerV.addEventListener("click", event => {
     let textInput = document.querySelector('#inputAC').value;
     placeACVertical(textInput)
     document.querySelector('#inputAC').value = ""
-    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
-        alert("You are ready to start shooting!")
-    }
+    
 })
 function placeACVertical(num) {
     if (ACPlaced == false) {
@@ -913,6 +914,9 @@ function placeACVertical(num) {
                         pboard[row + 3][column].classList.add("class", "pAC")
                         pboard[row + 4][column].classList.add("class", "pAC")
                         ACPlaced = true
+                        if (subPlaced == true && scoutPlaced == true && ACPlaced == true && BSPlaced == true) {
+                            alert("You are ready to start shooting!")
+                        }
                     }                   
                 }
                 catch (err) {
