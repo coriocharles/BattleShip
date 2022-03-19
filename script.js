@@ -622,6 +622,9 @@ subPlayerH.addEventListener("click", event => {
     let textInput = document.querySelector('#inputSub').value;
     placeSubHorizontal(textInput)
     document.querySelector('#inputSub').value = ""
+    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
+        alert("You are ready to start shooting!")
+    }
 })
 function placeSubHorizontal(num) {
 if (subPlaced == false){
@@ -650,6 +653,9 @@ subPlayerV.addEventListener("click", event => {
     let textInput = document.querySelector('#inputSub').value;
     placeSubVertical(textInput)
     document.querySelector('#inputSub').value = ""
+    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
+        alert("You are ready to start shooting!")
+    }
 })
 function placeSubVertical(num) {
 if (subPlaced == false) {
@@ -683,8 +689,10 @@ scoutPlayerH.addEventListener("click", event => {
     event.preventDefault()
     let textInput = document.querySelector('#inputSB').value;
     placeSBHorizontal(textInput)
-
     document.querySelector('#inputSB').value = ""
+    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
+        alert("You are ready to start shooting!")
+    }
 
 })
 function placeSBHorizontal(num) {
@@ -720,6 +728,9 @@ scoutPlayerV.addEventListener("click", event => {
     let textInput = document.querySelector('#inputSB').value;
     placeSBVertical(textInput)
     document.querySelector('#inputSB').value = ""
+    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
+        alert("You are ready to start shooting!")
+    }
 })
 function placeSBVertical(num) {
     if (scoutPlaced == false) {
@@ -754,6 +765,9 @@ BSPlayerH.addEventListener("click", event => {
     let textInput = document.querySelector('#inputBS').value;
     placeBSHorizontal(textInput)
     document.querySelector('#inputBS').value = ""
+    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
+        alert("You are ready to start shooting!")
+    }
 })
 function placeBSHorizontal(num) {
     if (BSPlaced == false) {
@@ -792,6 +806,9 @@ BSPlayerV.addEventListener("click", event => {
     let textInput = document.querySelector('#inputBS').value;
     placeBSVertical(textInput)
     document.querySelector('#inputBS').value = ""
+    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
+        alert("You are ready to start shooting!")
+    }
 })
 function placeBSVertical(num) {
     if (BSPlaced == false) {
@@ -830,6 +847,9 @@ ACPlayerH.addEventListener("click", event => {
     let textInput = document.querySelector('#inputAC').value;
     placeACHorizontal(textInput)
     document.querySelector('#inputAC').value = ""
+    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
+        alert("You are ready to start shooting!")
+    }
 })
 function placeACHorizontal(num) {
     if (ACPlaced == false) {
@@ -870,6 +890,9 @@ ACPlayerV.addEventListener("click", event => {
     let textInput = document.querySelector('#inputAC').value;
     placeACVertical(textInput)
     document.querySelector('#inputAC').value = ""
+    if (subPlaced == true || scoutPlaced == true || ACPlaced == true || BSPlaced == true) {
+        alert("You are ready to start shooting!")
+    }
 })
 function placeACVertical(num) {
     if (ACPlaced == false) {
