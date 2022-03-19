@@ -5,8 +5,6 @@ const playerShips = document.querySelectorAll("#ship")
 const computerShips = document.querySelectorAll("#cship")
 const trymove = document.querySelector(".trymove")
 const reset = document.querySelector(".reset")
-const playerscore = document.querySelector(".playerscore")
-const computerscore = document.querySelector(".computerscore")
 const playerwins = document.querySelector(".playerwins")
 const computerwins = document.querySelector(".computerwins")
 
